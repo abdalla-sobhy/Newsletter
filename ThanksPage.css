@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    box-sizing: border-box;  
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: hsl(234, 29%, 20%);
+    overflow: hidden;
+    flex-direction: column;
+
+}
+.whiteContainer{
+    background-color: #ffffff;
+    width: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    padding: 1%;
+    flex-direction: column;
+    padding-top: 4%;
+    padding-left: 11%;
+    padding-right: 5%;
+    margin-bottom: 5%;
+    padding-bottom: 3%;
+}
+.checkImage{
+    display: flex;
+    height: 60px;
+    width: 60px;
+    margin-right: 130%;
+}
+.checkImage svg{
+    width: 100%;
+    height: 100%;
+}
+.head{
+    font-size: 60px;
+    padding-top: 8%;
+    margin-right: 50%;
+    color: #242742;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+.whiteContainer p{
+    padding-top: 10%;
+    margin-left: -50%;
+    font-size: large;
+}
+.whiteContainer span{
+    font-weight: bold;
+}
+.ButtonClass{
+    display: flex;
+    padding-top: 10%;
+    margin-left: -30%;
+    width: 120%;
+    height: 90px;
+}
+.whiteContainer button{
+    width: 100%;
+    height: 100%;
+    background-color: #232742;
+    color: #ffffff;
+    border-radius: 7px;
+    cursor: pointer;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    border: none;
+}
+.whiteContainer button:hover{
+    background-image: linear-gradient(to right, #ff5770, #ff6741);
+    transition-duration: 1s;
+    box-shadow: 0px 0px 30px #ff6741;
+}

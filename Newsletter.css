@@ -1,161 +1,136 @@
-@font-face {
-	font-family: "Roboto-Bold"; /* Give your font a name */
-	src: url("C:/Users/ADMIN/OneDrive/Desktop/apps/front-end projets/Newsletter/fonts/Roboto-Bold.ttf") format("ttf"), /* Modern browsers */ url("C:/Users/ADMIN/OneDrive/Desktop/apps/front-end projets/Newsletter/fonts/Roboto-Bold.ttf") format("ttf");
+* {
+    margin: 0;
+    box-sizing: border-box;
 }
-*{
-    margin:0px;
-    padding:0px;
-    box-sizing:border-box;
-    justify-content:center;
-    align-items:center;
-    background-color:#36384D;
-    font-family:"Roboto-Bold";
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: hsl(234, 29%, 20%);
+    margin-top: 50px;
+    overflow: hidden;
 }
-.main-page-content{
-    background-color:#FFFFFF;
-    height:86%;
-    width:60%;
-    margin-left:19.5%;
-    margin-top:5%;
-    border-radius:30px;
+.center-white-area {
+    background-color: #ffffff;
+    justify-content: center;
+    align-items: center;
+    width: max-content;
+    border-radius: 20px;
+    display: flex;
+    gap: 5%;
+    padding: 1%;
+    flex-direction: row;
 }
-.illustration-sign-up-right-part{
-    align-items:center;
-    justify-content:center;
-    height:590px;
-    width:400px;
-    box-sizing:border-box;
-    margin-left:32.5%;
-    position:absolute;
-    margin-top:25px;
-    border-radius:20px;
+.left-part {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2%;
+    width: 100%;
+    height: 100%;
 }
-.illustration-sign-up-right-part img{
-    height:100%;
-    width:100%;
-    border-radius:20px;
-    background-color:white;
+.title-and--under-text {
+    width: 100%;
+    margin-left: 5%;
+    margin-top: 6%;
+    padding-bottom: 5%;
+    height: 10%;
 }
-.illustration-sign-up-left-part{
-    background-color:#FFFFFF;
+.title-and--under-text span {
+    color: #242742;
+    font-size: 290%;
+    font-weight: bold;
+    font-family: sans-serif;
+    height: 100%;
 }
-.title-and-under-text{
-    background-color:#FFFFFF;  
-    color:#242742; 
-    margin-top:100px;
-    margin-left:60px;
-    position:absolute;
-    font-size:16px;
-    font-weight:lighter;
-    font-family:sans-serif;
-    line-height:25px;
+.title-and--under-text p {
+    padding-top: 5%;
+    margin-left: 0.5%;
+    height: 100%;
 }
-.title-and-under-text span{
-    background-color:#FFFFFF;
-    color:#242742;
-    font-size:59px;
-    font-weight:bold;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    line-height:50px;
+.check-marks-and-text {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 3%;
+    padding-bottom: 7%;
+    height: 100%;
 }
-.illustration-sign-up-left-part-list{
-    display:grid;
-    grid-template-columns: repeat(3,1fe);
-    gap:15px;
-    row-gap:12px;
-    grid-auto-rows:minmax(1px, auto);
-    position:absolute;
-    margin-top:248px;
-    margin-left:60px;
-    background-color:#FFFFFF;
-
+.one-check-mark-and-text {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-left: 5%;
+    height: 100%;
 }
-.first-row-image-list{
-    grid-column:0;
-    grid-row:0;
-
+.one-check-mark-and-text svg {
+    padding-right: 3%;
+    width: 8%;
+    height: 8%;
 }
-.illustration-sign-up-left-part-list img{
-    background-color:#FFFFFF;
-    padding-bottom:0px;
-    height:100%;
-    width:100%;
+.email-addres {
+    margin-left: 5.5%;
+    margin-top: 6%;
+    color: #242742;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 90%;
+    padding-bottom: 3%;
 }
-.first-row-text-list{
-    grid-column:2;
-    grid-row:1;
-    background-color:#FFFFFF;
-    color:#242742;
-    font-family:sans-serif;
+.email-addres-and-valid-msg span {
+    margin-left: 30%;
+    color: #e17970;
 }
-.second-row-image-list{
-    grid-column:0;
-    grid-row:1;
+.invisible {
+    visibility: hidden;
 }
-.second-row-text-list{
-    grid-column:2;
-    grid-row:2;
-    background-color:#FFFFFF;
-    color:#242742;
-    font-family:sans-serif;
-}
-.third-row-image-list{
-    grid-column:0;
-    grid-row:2;
-}
-.third-row-text-list{
-    grid-column:2;
-    grid-row:0;
-    background-color:#FFFFFF;
-    color:#242742;
-    font-family:sans-serif;
-}
-.Email-address-title{
-    position:absolute;
-    background-color:#FFFFFF;
-    color:#242742;
-    margin-top:380px;
-    margin-left:60px;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size:12px;
-}
-#emailInput{
-    margin-top:403px;
-    position:absolute;
-    background-color:#FFFFFF;
-    margin-left:60px;
-    width:377px;
-    height:58px;
-    border-radius:10px;
-    padding:23px;
-    font-size:17px;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.emailInput {
+    margin-left: 5.5%;
+    width: 100%;
+    height: 50px;
+    border-radius: 6px;
+    font-size: 17px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     border-width: 1px;
-    padding-top: 20px;
+    padding-left: 3%;
+    background-color: transparent;
+    color: black;
+    border-color: #000;
 }
-.subscribe-button{
-    position:absolute;
-    margin-top:482px;
-    margin-left:60px;
-    background: fixed;
+.redEmailInput {
+    background-color: #ffe8e6;
+    color: #e17970;
+    border-color: #e17970;               
 }
-.subscribe-button button{
-    background-color:#232742;
-    color:#FFFFFF;
-    font-size:17px;
-    height:58px;
-    width:377px;
-    border-radius:10px;
-    cursor:pointer;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    border:none;
+.buttonClass {
+    height: 70px;
+    padding-top: 5%;
+    margin-left: 5.5%;
+    width: 100%;
+    margin-top: 2%;
 }
-.subscribe-button button:hover{
-    background-image: linear-gradient(to right,#FF5770,#FF6741);
-    transition-duration:1s;
-    box-shadow: 0 0 30px #FF6741;   
+.buttonClass button {
+    background-color: #232742;
+    color: #ffffff;
+    font-size: 90%;
+    height: 100%;
+    width: 100%;
+    border-radius: 7px;
+    cursor: pointer;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    border: none;
 }
-#text{
-    height:50px;
-    width:50px;
+.left-part button:hover {
+    background-image: linear-gradient(to right, #ff5770, #ff6741);
+    transition-duration: 1s;
+    box-shadow: 0px 0px 30px #ff6741;
+}
+.right-part {
+    height: 97%;
+    width: 100%;
+    padding-top: 0.7%;
+}
+.right-part svg {
+    height: 100%;
+    width: 100%;
 }
